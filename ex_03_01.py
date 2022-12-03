@@ -28,9 +28,16 @@
 # print('All Done')
 
 # Two-way decisions if, else, then
-x = 4
-if x > 2 :
-    print('Bigger')
-else :
-    print('Smaller')
-print('All Done')
+# x = 4
+# if x > 2 :
+#     print('Bigger')
+# else :
+#     print('Smaller')
+# print('All Done')
+
+x = 0
+y = 10
+if 0 == x :
+    if y == 10 :
+        print("Yes")  
+print('All Done')  
