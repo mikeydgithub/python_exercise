@@ -44,14 +44,34 @@
 #     istr = -1
 # print('First', istr)
 
-rawstr = input('Enter a number: ')
-try:
-    ival = int(rawstr)
-except:
-    ival = -1
+# rawstr = input('Enter a number: ')
+# try:
+#     ival = int(rawstr)
+# except:
+#     ival = -1
 
-if ival > 0 :
-    print('Nice work')
+# if ival > 0 :
+#     print('Nice work')
+# else:
+#     print('Not a number')
+# print('All Done')
+
+
+# challenge
+sh = input("Enter Hours: ")
+sr = input("Enter Rate: ")
+try:
+    fh = float(sh)
+    fr = float(sr)
+except:
+    print("Error, please enter numeric input.")
+    quit()
+
+print(fh, fr)
+if fh > 40:
+    reg = fh * fr
+    otp = (fh - 40.0) * (fr * 0.5)
+    xp = reg + otp
 else:
-    print('Not a number')
-print('All Done')
+    xp = fh * fr
+print("Pay:", xp)

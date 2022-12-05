@@ -35,9 +35,28 @@
 #     print('Smaller')
 # print('All Done')
 
-x = 0
-y = 10
-if 0 == x :
-    if y == 10 :
-        print("Yes")  
-print('All Done')  
+# x = 0
+# y = 10
+# if 0 == x :
+#     if y == 10 :
+#         print("Yes")  
+# print('All Done')  
+
+# challenge
+sh = input("Enter Hours: ")
+sr = input("Enter Rate: ")
+
+fh = float(sh)
+fr = float(sr)
+print(fh, fr)
+
+if fh > 40:
+    # print("Overtime")
+    reg = fh * fr
+    otp = (fh - 40.0) * (fr * 1.5)
+    # print(reg, otp)
+    xp = reg + otp
+else:
+    # print("Regular")
+    xp = fh * fr
+print("Pay:", xp)
